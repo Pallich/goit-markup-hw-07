@@ -71,8 +71,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  /* outline: 2px dotted teal; */ /* Тимчасове, допоміжне для верстки */
 }
 
 /* Header */
@@ -510,7 +508,7 @@ img {
   background-color: var(--hero-background-color-alternative);
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -526,7 +524,7 @@ img {
   margin-bottom: 30px;
 }
 
-.hero-button {
+.hero__button {
   cursor: pointer;
 
   font-family: Roboto, sans-serif;
@@ -551,8 +549,8 @@ img {
   transition-timing-function: var(--animations-time-function);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   background-color: var(--hero-button-hover);
 }
 
@@ -562,7 +560,7 @@ img {
   padding-bottom: 0;
 }
 
-.benefits-block {
+.benefits__icon-box {
   display: flex;
   height: 120px;
   width: 270px;
@@ -573,23 +571,20 @@ img {
   align-items: center;
 }
 
-.icon-antenna,
-.icon-clock,
-.icon-diagram,
-.icon-astronaut {
+.benefits__icon {
   width: 70px;
   height: 70px;
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
 }
 
-.benefits-list .items:not(:last-child) {
+.benefits__items:not(:last-child) {
   margin-right: 30px;
 }
 
-.benefits-title {
+.benefits__title {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -599,7 +594,7 @@ img {
   margin-bottom: 10px;
 }
 
-.benefits-text {
+.benefits__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
