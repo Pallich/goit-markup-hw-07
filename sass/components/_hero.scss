@@ -57,9 +57,10 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: $animations-time-function;
+
+    &:hover,
+    &:focus {
+            background-color: $hero-button-hover;
+            }
 }
 
-.hero__button:hover,
-.hero__button:focus {
-    background-color: $hero-button-hover;
-}

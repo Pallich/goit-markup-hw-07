@@ -51,18 +51,12 @@
     outline: transparent;
 
     transition: border-color 250ms $animations-time-function;
-}
 
-.recall__input:hover,
-.recall__input:focus,
-.recall__input:focus-visible {
-    border-color: $active-color;
-}
-
-.recall__input:hover+.recall__icon,
-.recall__input:focus+.recall__icon {
-    fill: $active-color;
-    pointer-events: none;
+    &:hover,
+    &:focus,
+    &:focus-visible {
+                    border-color: $active-color;
+                    }
 }
 
 .recall__icon {
@@ -73,6 +67,12 @@
     fill: $prymary-text-color;
 
     transition: fill 250ms $animations-time-function;
+
+    .recall__input:hover+&,
+    .recall__input:focus+& {
+                            fill: $active-color;
+                            pointer-events: none;
+                            }
 }
 
 .recall__comment-field {
@@ -90,21 +90,23 @@
     outline: transparent;
 
     transition: border-color 250ms $animations-time-function;
+
+    &:hover,
+    &:focus {
+            border-color: $active-color;
+            }
+
+    &::placeholder {
+                    font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 0.01em;
+                    
+                        color: $recall-placeholder-color;
+                    }
 }
 
-.recall__comment-field:hover,
-.recall__comment-field:focus {
-    border-color: $active-color;
-}
 
-.recall__comment-field::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-
-    color: $recall-placeholder-color;
-}
 
 .recall__check-icon {
     display: flex;
@@ -121,19 +123,20 @@
     transition-property: background-color, border-color, fill;
     transition-duration: 250ms;
     transition-timing-function: $animations-time-function;
+
+    &:hover,
+    &:focus,
+    .recall__check:focus+& {
+                            border-color: $active-color;
+                            }
+     
+    .recall__check:checked+& {
+        background-color: $active-color;
+        border-color: $active-color;
+        fill: $prymary-bg-color;
+    }
 }
 
-.recall__check-icon:hover,
-.recall__check-icon:focus,
-.recall__check:focus+.recall__check-icon {
-    border-color: $active-color;
-}
-
-.recall__check:checked+.recall__check-icon {
-    background-color: $active-color;
-    border-color: $active-color;
-    fill: $prymary-bg-color;
-}
 
 .recall__confirm {
     cursor: pointer;
@@ -177,9 +180,9 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: $animations-time-function;
-}
 
-.recall__btn-send:hover,
-.recall__btn-send:focus {
-    background-color: $hero-button-hover;
+    &:hover,
+    &:focus {
+            background-color: $hero-button-hover;
+            }
 }

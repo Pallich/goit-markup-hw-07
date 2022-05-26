@@ -41,10 +41,11 @@
     fill: #000000;
 
     transition: fill 250ms $animations-time-function;
+
+    .modal__btn-close:hover &,
+    .modal__btn-close:focus & {
+                                fill: $active-color;
+                            }
 }
 
-.modal__btn-close:hover .modal__close-icon,
-.modal__btn-close:focus .modal__close-icon {
-    fill: $active-color;
-}
 

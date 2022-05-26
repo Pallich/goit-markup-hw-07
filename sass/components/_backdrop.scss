@@ -6,8 +6,7 @@
     height: 100%;
     opacity: 1;
     background-color: $backdrop-bgcolor;
-    /* z-index: 99999; */
-
+   
     transition: opacity 250ms $animations-time-function;
 }
 

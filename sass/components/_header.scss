@@ -18,6 +18,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $animations-time-function;
+
+    &--current,
+    &:focus,
+    &:hover {
+            color: $active-color;
+             }
 }
 
 .header__nav-link--current::after {
@@ -31,12 +37,6 @@
     left: 0;
     bottom: 0;
     background-color: $active-color;
-}
-
-.header__nav-link--current,
-.header__nav-link:focus,
-.header__nav-link:hover {
-    color: $active-color;
 }
 
 .header__nav {
@@ -59,6 +59,12 @@
 
 .contacts__icon {
     margin-right: 10px;
+
+    &:hover,
+    &:focus {
+            color: $active-color;
+            fill: $active-color;
+            }
 }
 
 .contacts__link {
@@ -74,19 +80,14 @@
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: $animations-time-function;
+
+    &:hover,
+    &:focus {
+            color: $active-color;
+            fill: $active-color;
+            }
 }
 
-.contacts__link:hover,
-.contacts__link:focus,
-.footer__adress-link:hover,
-.footer__adress-link:focus,
-.footer__contacts-link:hover,
-.footer__contacts-link:focus,
-.contacts__icon:hover,
-.contacts__icon:focus {
-    color: $active-color;
-    fill: $active-color;
-}
 
 .header__contacts {
     display: flex;

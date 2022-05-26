@@ -46,12 +46,14 @@
 
     transform: translateY(101%);
     transition: transform 250ms $animations-time-function;
+
+    .works__cards-link:hover &,
+    .works__cards-link:focus & {
+        transform: translateY(0);
+    }
 }
 
-.works__cards-link:hover .works__overlay,
-.works__cards-link:focus .works__overlay {
-    transform: translateY(0);
-}
+
 
 .works__info-box {
     border: 1px solid $border-color;
@@ -70,15 +72,17 @@
 
 .works__cards-link {
     display: block;
+
+    &:hover,
+    &:focus {
+            cursor: pointer;
+            box-shadow: 1px 4px 6px $works-card-shadow-color-one,
+                0px 4px 4px $works-card-shadow-color-two,
+                0px 1px 1px $works-card-shadow-color-three;
+            }
 }
 
-.works__cards-link:hover,
-.works__cards-link:focus {
-    cursor: pointer;
-    box-shadow: 1px 4px 6px $works-card-shadow-color-one,
-        0px 4px 4px $works-card-shadow-color-two,
-        0px 1px 1px $works-card-shadow-color-three;
-}
+
 
 .works__items:not(:nth-child(3n)) {
     margin-right: 30px;

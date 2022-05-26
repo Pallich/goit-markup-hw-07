@@ -32,6 +32,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $animations-time-function;
+
+    &:hover,
+    &:focus {
+            color: $active-color;
+            fill: $active-color;
+            }
 }
 
 .footer__contacts-link {
@@ -40,6 +46,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $animations-time-function;
+
+    &:hover,
+    &:focus {
+            color: $active-color;
+            fill: $active-color;
+            }
 }
 
 .footer__socials-title {
@@ -58,10 +70,10 @@
 .footer__socials-items {
     border-radius: 50%;
     background-color: $footer-background-icons;
-}
 
-.footer__socials-items:not(:last-child) {
-    margin-right: 10px;
+    &:not(:last-child) {
+                        margin-right: 10px;
+                        }
 }
 
 .footer__socials-link {
@@ -75,11 +87,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: $animations-time-function;
-}
 
-.footer__socials-link:hover,
-.footer__socials-link:focus {
-    background-color: $active-color;
+    &:hover,
+    &:focus {
+            background-color: $active-color;
+            }
 }
 
 .footer__socials-icon {
@@ -111,20 +123,20 @@
     color: $prymary-bg-color;
 
     transition: border-color 250ms $animations-time-function;
-}
 
-.footer__subscribe-input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: $subscribe-placeholder-color;
-}
+    &:not(:placeholder-shown),
+    &:hover,
+    &:focus-visible {
+                    outline: none;
+                    border-color: $active-color;
+                    }
 
-.footer__subscribe-input:not(:placeholder-shown),
-.footer__subscribe-input:hover,
-.footer__subscribe-input:focus-visible {
-    outline: none;
-    border-color: $active-color;
+    &::placeholder {
+                    font-size: 16px;
+                    line-height: 1.25;
+                    letter-spacing: 0.03em;
+                    color: $subscribe-placeholder-color;
+                    }
 }
 
 .footer__subscribe-button {
@@ -148,13 +160,14 @@
     background-color: $active-color;
 
     transition: background-color 250ms $animations-time-function;
+
+    .footer__subscribe-input:hover ~ &,
+    &:hover,
+    &:focus {
+            background-color: $hero-button-hover;
+            }
 }
 
-.footer__subscribe-input:hover~.footer__subscribe-button,
-.footer__subscribe-button:hover,
-.footer__subscribe-button:focus {
-    background-color: $hero-button-hover;
-}
 
 .footer__subscribe-icon {
     fill: $prymary-bg-color;

@@ -17,12 +17,12 @@
     display: block;
 }
 
-.doing__items:not(:last-child) {
-    margin-right: 30px;
-}
-
 .doing__items {
     position: relative;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 .doing__text {
