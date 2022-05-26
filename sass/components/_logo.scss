@@ -8,8 +8,13 @@
     color: $active-color;
 }
 
-.header__logo-color {
+.header__logo {
     color: $prymary-text-color;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .footer__logo-second {
