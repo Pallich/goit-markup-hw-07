@@ -3,7 +3,7 @@
     line-height: 1.63;
     letter-spacing: 0.03em;
 
-    background: var(--button-background);
+    background: $button-background;
     border-radius: 4px;
     border: none;
 
@@ -11,5 +11,5 @@
 
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
-    transition-timing-function: var(--animations-time-function);
+    transition-timing-function: $animations-time-function;
 }

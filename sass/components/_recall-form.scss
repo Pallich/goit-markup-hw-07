@@ -5,7 +5,7 @@
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--prymary-text-color);
+    color: $prymary-text-color;
 }
 
 .recall__comment {
@@ -33,7 +33,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--header-contacts);
+    color: $header-contacts;
 }
 
 .recall__input {
@@ -41,7 +41,7 @@
     display: block;
     height: 40px;
     width: 100%;
-    border: 1px solid var(--recall-inpuy-border-call);
+    border: 1px solid $recall-inpuy-border-call;
     border-radius: 4px;
     padding-left: 42px;
     padding-right: 10px;
@@ -50,18 +50,18 @@
     font-size: 21px;
     outline: transparent;
 
-    transition: border-color 250ms var(--animations-time-function);
+    transition: border-color 250ms $animations-time-function;
 }
 
 .recall__input:hover,
 .recall__input:focus,
 .recall__input:focus-visible {
-    border-color: var(--active-color);
+    border-color: $active-color;
 }
 
 .recall__input:hover+.recall__icon,
 .recall__input:focus+.recall__icon {
-    fill: var(--active-color);
+    fill: $active-color;
     pointer-events: none;
 }
 
@@ -70,9 +70,9 @@
     top: 0;
     left: 12px;
     top: 30px;
-    fill: var(--prymary-text-color);
+    fill: $prymary-text-color;
 
-    transition: fill 250ms var(--animations-time-function);
+    transition: fill 250ms $animations-time-function;
 }
 
 .recall__comment-field {
@@ -80,7 +80,7 @@
     width: 100%;
     height: 120px;
     resize: none;
-    border: 1px solid var(--recall-inpuy-border-call);
+    border: 1px solid $recall-inpuy-border-call;
     border-radius: 4px;
     padding-left: 16px;
     padding-right: 16px;
@@ -89,12 +89,12 @@
     font-size: 16px;
     outline: transparent;
 
-    transition: border-color 250ms var(--animations-time-function);
+    transition: border-color 250ms $animations-time-function;
 }
 
 .recall__comment-field:hover,
 .recall__comment-field:focus {
-    border-color: var(--active-color);
+    border-color: $active-color;
 }
 
 .recall__comment-field::placeholder {
@@ -103,7 +103,7 @@
     line-height: 16px;
     letter-spacing: 0.01em;
 
-    color: var(--recall-placeholder-color);
+    color: $recall-placeholder-color;
 }
 
 .recall__check-icon {
@@ -113,26 +113,26 @@
     content: "";
     width: 16px;
     height: 15px;
-    border: 2px solid var(--prymary-text-color);
+    border: 2px solid $prymary-text-color;
     border-radius: 4px;
     margin-right: 7px;
     fill: transparent;
 
     transition-property: background-color, border-color, fill;
     transition-duration: 250ms;
-    transition-timing-function: var(--animations-time-function);
+    transition-timing-function: $animations-time-function;
 }
 
 .recall__check-icon:hover,
 .recall__check-icon:focus,
 .recall__check:focus+.recall__check-icon {
-    border-color: var(--active-color);
+    border-color: $active-color;
 }
 
 .recall__check:checked+.recall__check-icon {
-    background-color: var(--active-color);
-    border-color: var(--active-color);
-    fill: var(--prymary-bg-color);
+    background-color: $active-color;
+    border-color: $active-color;
+    fill: $prymary-bg-color;
 }
 
 .recall__confirm {
@@ -145,11 +145,11 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--header-contacts);
+    color: $header-contacts;
 }
 
 .recall__confirm-link {
-    color: var(--active-color);
+    color: $active-color;
 }
 
 .recall__btn-send {
@@ -164,22 +164,22 @@
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--prymary-bg-color);
-    background-color: var(--active-color);
+    color: $prymary-bg-color;
+    background-color: $active-color;
     border-radius: 4px;
     border: none;
 
     min-width: 200px;
     padding: 10px 32px;
 
-    box-shadow: 0px 4px 4px var(--button-shadow);
+    box-shadow: 0px 4px 4px $button-shadow;
 
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: var(--animations-time-function);
+    transition-timing-function: $animations-time-function;
 }
 
 .recall__btn-send:hover,
 .recall__btn-send:focus {
-    background-color: var(--hero-button-hover);
+    background-color: $hero-button-hover;
 }

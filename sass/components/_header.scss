@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid var(--header-border-color);
+    border-bottom: 1px solid $header-border-color;
 }
 
 .header__content {
@@ -10,14 +10,14 @@
 .header__nav-link {
     position: relative;
 
-    color: var(--prymary-text-color);
+    color: $prymary-text-color;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: var(--animations-time-function);
+    transition-timing-function: $animations-time-function;
 }
 
 .header__nav-link--current::after {
@@ -30,13 +30,13 @@
 
     left: 0;
     bottom: 0;
-    background-color: var(--active-color);
+    background-color: $active-color;
 }
 
 .header__nav-link--current,
 .header__nav-link:focus,
 .header__nav-link:hover {
-    color: var(--active-color);
+    color: $active-color;
 }
 
 .header__nav {
@@ -62,8 +62,8 @@
 }
 
 .contacts__link {
-    color: var(--header-contacts);
-    fill: var(--header-contacts);
+    color: $header-contacts;
+    fill: $header-contacts;
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.02em;
@@ -73,7 +73,7 @@
 
     transition-property: color, fill;
     transition-duration: 250ms;
-    transition-timing-function: var(--animations-time-function);
+    transition-timing-function: $animations-time-function;
 }
 
 .contacts__link:hover,
@@ -84,8 +84,8 @@
 .footer__contacts-link:focus,
 .contacts__icon:hover,
 .contacts__icon:focus {
-    color: var(--active-color);
-    fill: var(--active-color);
+    color: $active-color;
+    fill: $active-color;
 }
 
 .header__contacts {

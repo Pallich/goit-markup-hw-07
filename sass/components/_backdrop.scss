@@ -5,10 +5,10 @@
     width: 100%;
     height: 100%;
     opacity: 1;
-    background-color: var(--backdrop-bgcolor);
+    background-color: $backdrop-bgcolor;
     /* z-index: 99999; */
 
-    transition: opacity 250ms var(--animations-time-function);
+    transition: opacity 250ms $animations-time-function;
 }
 
 .backdrop.is-hidden .modal {

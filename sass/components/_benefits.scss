@@ -6,7 +6,7 @@
     display: flex;
     height: 120px;
     width: 270px;
-    background-color: var(--button-background);
+    background-color: $button-background;
     border-radius: 4px;
     margin-bottom: 30px;
     justify-content: center;
@@ -31,7 +31,7 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--prymary-text-color);
+    color: $prymary-text-color;
 
     margin-bottom: 10px;
 }
@@ -41,5 +41,5 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--header-contacts);
+    color: $header-contacts;
 }

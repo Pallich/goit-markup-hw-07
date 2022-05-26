@@ -3,7 +3,7 @@
 }
 
 .works__name {
-    color: var(--prymary-text-color);
+    color: $prymary-text-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -18,7 +18,7 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(--header-contacts);
+    color: $header-contacts;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -41,11 +41,11 @@
     align-items: center;
     font-size: 18px;
     line-height: 1.55;
-    color: var(--prymary-bg-color);
-    background-color: var(--works-overlay-color);
+    color: $prymary-bg-color;
+    background-color: $works-overlay-color;
 
     transform: translateY(101%);
-    transition: transform 250ms var(--animations-time-function);
+    transition: transform 250ms $animations-time-function;
 }
 
 .works__cards-link:hover .works__overlay,
@@ -54,7 +54,7 @@
 }
 
 .works__info-box {
-    border: 1px solid var(--border-color);
+    border: 1px solid $border-color;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 20px;
@@ -75,9 +75,9 @@
 .works__cards-link:hover,
 .works__cards-link:focus {
     cursor: pointer;
-    box-shadow: 1px 4px 6px var(--works-card-shadow-color-one),
-        0px 4px 4px var(--works-card-shadow-color-two),
-        0px 1px 1px var(--works-card-shadow-color-three);
+    box-shadow: 1px 4px 6px $works-card-shadow-color-one,
+        0px 4px 4px $works-card-shadow-color-two,
+        0px 1px 1px $works-card-shadow-color-three;
 }
 
 .works__items:not(:nth-child(3n)) {

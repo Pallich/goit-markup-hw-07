@@ -1,11 +1,11 @@
 .team {
-    background-color: var(--button-background);
+    background-color: $button-background;
 }
 
 .team__items {
-    background: var(--prymary-bg-color);
-    box-shadow: 0px 1px 3px var(--box-shadow-1), 0px 1px 1px var(--box-shadow-2),
-        0px 2px 1px var(--box-shadow-3);
+    background: $prymary-bg-color;
+    box-shadow: 0px 1px 3px $box-shadow-1, 0px 1px 1px $box-shadow-2,
+        0px 2px 1px $box-shadow-3;
     border-radius: 0px 0px 4px 4px;
     width: 270px;
 }
@@ -24,7 +24,7 @@
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    color: var(--prymary-text-color);
+    color: $prymary-text-color;
     margin-top: 0;
     margin-bottom: 50px;
 }
@@ -34,7 +34,7 @@
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: var(--prymary-text-color);
+    color: $prymary-text-color;
     margin-bottom: 10px;
 }
 
@@ -43,7 +43,7 @@
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: var(--header-contacts);
+    color: $header-contacts;
     margin-bottom: 16px;
 }
 
@@ -54,7 +54,7 @@
 .social-list {
     display: flex;
     justify-content: center;
-    fill: var(--team-icons-color);
+    fill: $team-icons-color;
 }
 
 .social-list__link {
@@ -67,7 +67,7 @@
 
     transition-property: fill, background-color;
     transition-duration: 250ms;
-    transition-timing-function: var(--animations-time-function);
+    transition-timing-function: $animations-time-function;
 }
 
 .social-list__items {
@@ -87,6 +87,6 @@
 .social-list__link:hover,
 .social-list__link:focus {
     cursor: pointer;
-    fill: var(--prymary-bg-color);
-    background-color: var(--active-color);
+    fill: $prymary-bg-color;
+    background-color: $active-color;
 }

@@ -6,14 +6,14 @@
 
     width: 528px;
     height: 581px;
-    box-shadow: 0px 1px 3px var(--modal-box-shadow-one),
-        0px 1px 1px var(--modal-box-shadow-two),
-        0px 2px 1px var(--modal-box-shadow-three);
+    box-shadow: 0px 1px 3px $modal-box-shadow-one,
+        0px 1px 1px $modal-box-shadow-two,
+        0px 2px 1px $modal-box-shadow-three;
     border-radius: 4px;
     padding: 40px;
 
-    background-color: var(--prymary-bg-color);
-    transition: transform 250ms var(--animations-time-function);
+    background-color: $prymary-bg-color;
+    transition: transform 250ms $animations-time-function;
 }
 
 .modal__btn-close {
@@ -24,8 +24,8 @@
     align-items: center;
     justify-content: center;
 
-    background-color: var(--prymary-bg-color);
-    border: 1px solid var(--modal-close-btn-border-color);
+    background-color: $prymary-bg-color;
+    border: 1px solid $modal-close-btn-border-color;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -40,11 +40,11 @@
     height: 11px;
     fill: #000000;
 
-    transition: fill 250ms var(--animations-time-function);
+    transition: fill 250ms $animations-time-function;
 }
 
 .modal__btn-close:hover .modal__close-icon,
 .modal__btn-close:focus .modal__close-icon {
-    fill: var(--active-color);
+    fill: $active-color;
 }
 
