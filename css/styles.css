@@ -242,7 +242,6 @@ img {
   height: 100%;
   opacity: 1;
   background-color: var(--backdrop-bgcolor);
-  /* z-index: 99999; */
 
   transition: opacity 250ms var(--animations-time-function);
 }
@@ -497,13 +496,6 @@ img {
 .hero.section {
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.list .button,
-.list .button.active {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.03em;
 }
 
 .hero {
@@ -986,6 +978,9 @@ img {
 }
 
 .works__btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   padding: 6px 22px;
 }
 
