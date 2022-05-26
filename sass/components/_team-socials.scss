@@ -5,12 +5,10 @@
 }
 
 .social-list__link {
-    display: flex;
+    @extend %centeredFlex;
     height: 44px;
     width: 44px;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
 
     transition-property: fill, background-color;
     transition-duration: 250ms;

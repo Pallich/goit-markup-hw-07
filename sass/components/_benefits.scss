@@ -3,14 +3,13 @@
 }
 
 .benefits__icon-box {
-    display: flex;
+    @extend %centeredFlex;
     height: 120px;
     width: 270px;
     background-color: $button-background;
     border-radius: 4px;
     margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .benefits__icon {

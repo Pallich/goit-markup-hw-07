@@ -21,12 +21,10 @@
 }
 
 .footer__socials-link {
-    display: flex;
+    @extend %centeredFlex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
 
     transition-property: background-color;
     transition-duration: 250ms;

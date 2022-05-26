@@ -27,7 +27,7 @@
 
 .doing__text {
     position: absolute;
-    display: flex;
+    @extend %centeredFlex;
     width: 100%;
     height: 70px;
     background-color: $doing-cards-bgcolor;
@@ -37,6 +37,4 @@
     color: $prymary-bg-color;
     font-weight: 700;
     line-height: 1.17;
-    align-items: center;
-    justify-content: center;
 }

@@ -20,9 +20,7 @@
     height: 92px;
     border: 1px solid $team-icons-color;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centeredFlex;
 
     transition-property: fill;
     transition-duration: 250ms;

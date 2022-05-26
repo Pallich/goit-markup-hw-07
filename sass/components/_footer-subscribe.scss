@@ -40,9 +40,7 @@
 }
 
 .footer__subscribe-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %centeredFlex;
 
     cursor: pointer;
     padding: 0;
